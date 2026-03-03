@@ -13,7 +13,7 @@
             class="p-2 rounded-xl transition-all duration-300 group-hover:bg-[var(--surface)]"
           >
             <img
-              src="../../../img/bmllogo.jpeg"
+              src="/img/bmllogo.jpeg"
               alt="BodyMacs"
               class="w-10 h-10 rounded-lg object-cover"
             />
