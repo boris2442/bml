@@ -1,0 +1,4 @@
+# Convertir automatiquement les fins de ligne en LF pour tous les fichiers JS/CSS/HTML
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
