@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --primary: #f39200;
+    --primary-hover: #d68100;
+    --accent: #0a1b9e; /* Ton bleu tech pour les contrastes */
+
+    /* UI Colors */
+    --background: #ffffff;
+    --surface: #f8f9fa;
+    --text-main: #1a1a1b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+  }
+
+  .dark {
+    --primary: #f39200;
+    --background: #0b0e14;
+    --surface: #161b22;
+    --text-main: #f0f6fc;
+    --text-muted: #8b949e;
+    --border: #30363d;
+  }
+
+  body {
+    @apply bg-[var(--background)] text-[var(--text-main)];
+    font-family: "Geist", "Inter", "system-ui", "sans-serif";
+    font-feature-settings:
+      "cv02", "cv03", "cv04", "cv11"; /* Optimisation pour Inter/Geist */
+  }
+}

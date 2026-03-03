@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Servir les fichiers statiques depuis dist
+  RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -f
+  RewriteRule ^ dist/%{REQUEST_URI} [QSA,L]
+  
+  # Servir les dossiers depuis dist
+  RewriteCond %{DOCUMENT_ROOT}/dist%{REQUEST_URI} -d
+  RewriteRule ^ dist/%{REQUEST_URI} [QSA,L]
+  
+  # Rediriger toutes les routes vers dist/index.html pour le routeur Vue.js
+  RewriteRule ^ index.html [L]
+</IfModule>
