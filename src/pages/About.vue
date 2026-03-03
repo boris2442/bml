@@ -107,78 +107,7 @@
       </div>
     </section>
 
-    <!-- <section class="py-24 bg-[var(--background)]">
-      <div class="max-w-7xl mx-auto px-4">
-        <div class="mb-16">
-          <p
-            class="text-[10px] font-black uppercase tracking-[0.6em] text-[var(--accent)] mb-4"
-          >
-            // L'ÉQUIPE EXPERTE
-          </p>
-          <h2
-            class="text-4xl md:text-6xl font-black tracking-tighter italic leading-none uppercase"
-          >
-            Crafting Excellence.
-          </h2>
-        </div>
-
-        <div
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-t border-l border-[var(--border)] gap-2 overflow-hidden"
-        >
-          <div
-            v-for="(member, idx) in team"
-            :key="idx"
-            class="group relative aspect-[3/4] border-r border-b border-[var(--border)] overflow-hidden bg-[var(--surface)]"
-          >
-            <img
-              v-if="member.photo"
-              :src="member.photo"
-              :alt="member.name"
-              class="absolute inset-0 w-full h-full object-cover group-hover:grayscale grayscale-0 opacity-100 transition-all duration-700 rounded-sm"
-              :loading="'lazy'"
-            />
-            <div
-              v-else
-              class="absolute inset-0 flex items-center justify-center text-7xl opacity-10"
-            >
-              {{ member.icon }}
-            </div>
-
-            <div
-              class="absolute inset-0 bg-gradient-to-t from-[var(--accent)]/90 via-[var(--accent)]/20 to-transparent flex flex-col justify-end p-8 translate-y-8 group-hover:translate-y-0 transition-transform duration-500"
-            >
-              <span
-                class="text-[9px] font-black text-[var(--primary)] uppercase tracking-[0.3em] mb-2"
-                >{{ member.title }}</span
-              >
-              <h3
-                class="text-2xl font-black italic uppercase leading-none mb-4 text-white tracking-tighter"
-              >
-                {{ member.name }}
-              </h3>
-
-              <div
-                class="space-y-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100"
-              >
-                <p
-                  class="text-[11px] text-white/80 leading-relaxed font-light italic"
-                >
-                  {{ member.bio }}
-                </p>
-                <div class="pt-4 border-t border-white/20">
-                  <p
-                    class="text-[9px] font-bold text-[var(--primary)] uppercase tracking-widest"
-                  >
-                    Expertise: {{ member.skills }}
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
+   
     <section class="py-24 bg-[var(--background)] overflow-hidden">
       <div class="max-w-7xl mx-auto px-4">
         <div class="mb-20 relative">

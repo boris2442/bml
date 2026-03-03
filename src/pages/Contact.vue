@@ -1,6 +1,6 @@
 <template>
   <main
-    class="bg-[var(--background)] selection:bg-[var(--primary)] selection:text-white"
+    class="bg-[var(--background)] selection:bg-[var(--primary)] selection:text-white overflow-x-hidden"
   >
     <section
       class="relative min-h-[90vh] flex items-center justify-center bg-[var(--background)] overflow-hidden pt-20"
@@ -10,7 +10,7 @@
           class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center"
         >
           <h2
-            class="text-[20vw] font-black leading-none uppercase italic opacity-[0.03] dark:opacity-[0.05] tracking-tighter text-[var(--text-main)]"
+            class="text-[40vw] md:text-[20vw] font-black leading-none uppercase italic opacity-[0.03] dark:opacity-[0.05] tracking-tighter text-[var(--text-main)]"
           >
             BODYMAC S
           </h2>
@@ -203,7 +203,7 @@
             class="lg:col-span-8 p-1 md:p-12 bg-white dark:bg-white/5 border border-[var(--border)] shadow-2xl relative group"
           >
             <div
-              class="absolute -top-20 -right-20 w-64 h-64 bg-[var(--primary)]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"
+              class="absolute top-1/4 -right-20 md:-right-20 right-0w-64 h-64 bg-[var(--primary)]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"
             ></div>
 
             <div class="relative z-10">
