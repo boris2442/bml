@@ -126,7 +126,7 @@
             </div>
 
             <a
-              href="tel:640472357"
+              href="https://wa.me/640472357"
               class="group block p-6 bg-[var(--surface)] border border-[var(--border)] hover:border-[var(--primary)] transition-all duration-500 rounded-sm"
             >
               <div class="flex items-center gap-6">
@@ -144,7 +144,7 @@
                   <p
                     class="font-black text-lg group-hover:text-[var(--primary)] transition-colors tracking-tight"
                   >
-                    640 472 357 / 696 428 651
+                    (+237) 640 472 357 / (+237) 696 428 651
                   </p>
                 </div>
               </div>

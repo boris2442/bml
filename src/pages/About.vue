@@ -51,8 +51,8 @@
             Notre Mission
           </h2>
           <p class="text-xl text-[var(--text-main)] leading-relaxed font-light">
-            BodyMac  transforme les idées ambitieuses en produits digitaux
-            qui impactent.
+            BodyMac transforme les idées ambitieuses en produits digitaux qui
+            impactent.
             <span class="text-[var(--primary)] font-bold"
               >Pas de promesses vides.</span
             >
@@ -107,7 +107,6 @@
       </div>
     </section>
 
-   
     <section class="py-24 bg-[var(--background)] overflow-hidden">
       <div class="max-w-7xl mx-auto px-4">
         <div class="mb-20 relative">
@@ -377,7 +376,7 @@ const team = [
     bio: "Développement et maintenance des API, gestion des bases de données, sécurité et performance côté serveur.",
     skills: "Laravel, SQL, REST",
     gradientClass: "from-gray-100 to-gray-50",
-    photo: "/img/equipe/dominique.png",
+    photo: "/img/equipe/expeditdominique.jpg",
   },
   {
     icon: "🖥️",

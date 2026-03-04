@@ -8,18 +8,35 @@
   >
     <nav class="max-w-7xl mx-auto px-4">
       <div class="flex items-center justify-between h-20">
-        <RouterLink to="/" class="flex items-center group">
+        <!-- <RouterLink to="/" class="flex items-center group">
           <div
             class="p-2 rounded-xl transition-all duration-300 group-hover:bg-[var(--surface)]"
           >
             <img
-              src="/img/bmllogo.jpeg"
+              src="/img/bmllogo-removebg-preview.png"
               alt="BodyMacs"
-              class="w-10 h-10 rounded-lg object-cover"
+              class="w-16 h-16 rounded-lg object-cover"
             />
           </div>
-        </RouterLink>
+        </RouterLink> -->
 
+        <RouterLink to="/" class="flex items-center group">
+          <div
+            class="p-2 rounded-xl transition-all duration-300 group-hover:bg-[var(--surface)] flex flex-col items-center"
+          >
+            <img
+              src="/img/bmllogo-removebg-preview.png"
+              alt="BodyMacs"
+              class="w-16 h-16 rounded-lg object-cover"
+            />
+
+            <span
+              class="hidden dark:block -mt-3 text-xs font-bold tracking-tight text-[var(--text-main)]"
+            >
+              Body Macs
+            </span>
+          </div>
+        </RouterLink>
         <ul class="hidden md:flex items-center h-full">
           <li v-for="route in navRoutes" :key="route.name" class="h-full">
             <RouterLink

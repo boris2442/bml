@@ -361,27 +361,29 @@ const projects = [
     link: null,
     image: "/img/preinsc.png",
   },
-  {
-    icon: "✈️",
-    name: "NgueNgan Travel",
-    category: "E-commerce",
-    challenge:
-      "Agence de voyage avec site web statique. Taux de conversion 1.2%, aucun système de réservation en ligne, 80% des bookings par téléphone.",
-    solution:
-      "Refonte complète avec Next.js, galerie visuelle des destinations, système de réservation en temps-réel avec paiement Stripe, recommandations AI, et dashboard pour l'équipe.",
-    results: [
-      { label: "Conversion +85%", value: "6.8%" },
-      { label: "Réservations Online", value: "92%" },
-      { label: "Revenu Annual", value: "+320%" },
-    ],
-    technologies: ["Next.js", "Stripe", "Firebase", "Tailwind CSS"],
-    quote:
-      "C'est incroyable. Nos clients réservent 24/7 sans nous appeler. Le site se vend presque seul maintenant.",
-    client: "Pierre Nguyen, CEO NgueNgan",
-    gradientClass: "from-orange-500/30 to-red-500/30",
-    link: null,
-    image: "/img/nguengan.png",
-  },
+  // {
+  //   icon: "✈️",
+  //   name: "NgueNgan Travel",
+  //   category: "E-commerce",
+  //   challenge:
+  //     "Agence de voyage avec site web statique. Taux de conversion 1.2%, aucun système de réservation en ligne, 80% des bookings par téléphone.",
+  //   solution:
+  //     "Refonte complète avec Next.js, galerie visuelle des destinations, système de réservation en temps-réel avec paiement Stripe, recommandations AI, et dashboard pour l'équipe.",
+  //   results: [
+  //     { label: "Conversion +85%", value: "6.8%" },
+  //     { label: "Réservations Online", value: "92%" },
+  //     { label: "Revenu Annual", value: "+320%" },
+  //   ],
+  //   technologies: ["Next.js", "Stripe", "Firebase", "Tailwind CSS"],
+  //   quote:
+  //     "C'est incroyable. Nos clients réservent 24/7 sans nous appeler. Le site se vend presque seul maintenant.",
+  //   client: "Pierre Nguyen, CEO NgueNgan",
+  //   gradientClass: "from-orange-500/30 to-red-500/30",
+  //   link: null,
+  //   image: "/img/nguengan.png",
+  // },
+
+
   {
     icon: "🛒",
     name: "Espace Cameroun Marketplace",
@@ -522,32 +524,32 @@ const statistics = [
 const testimonials = [
   {
     text: "BodyMac Labs n'est pas juste un prestataire, c'est un partenaire stratégique. Ils comprennent nos enjeux métier et proposent des solutions qui impactent vraiment.",
-    author: "Olivier Martin",
-    company: "CEO, TechStart",
+    author: "Olivier Kengne",
+    company: "Ingenieur Reseau",
   },
   {
     text: "La qualité du code et l'attention aux détails sont hors normes. Notre équipe interne a même appris de leurs best practices et standards.",
-    author: "Sarah Johnson",
-    company: "CTO, FinanceApp",
+    author: "Sarah Djoumegnie",
+    company: "CTO, FinTech Innovate",
   },
   {
     text: "Supports 24/7, responsive, proactif. Pas besoin d'attendre des jours pour une réponse. C'est du vrai professionnalisme.",
-    author: "Luc Moreau",
+    author: "Jean Sikati",
     company: "Product Manager, E-commerce Plus",
   },
   {
     text: "Notre MVP a été livré en 6 semaines avec zéro bug. Très impressionné par la méthodologie agile et les daily standups.",
-    author: "Emma Dubois",
+    author: "Boris Tenang",
     company: "Founder, HealthBase",
   },
   {
     text: "Coût final dans le budget. Délais respectés. Réussi au premier coup sans étapes de correction massives. Recommandé sans hésiter.",
-    author: "Thomas Laurent",
+    author: "Thomas Lontsi",
     company: "COO, LogisticFlow",
   },
   {
     text: "Pas de surprises, pas d'excuses. Transparence complète. Reporting hebdomadaire détaillé. Exactement ce qu'on attendait.",
-    author: "Béatrice Klein",
+    author: "Béatrice Lemon",
     company: "Head of Digital, Retail Co.",
   },
 ];

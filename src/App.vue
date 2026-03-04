@@ -9,7 +9,7 @@
 <script setup lang="ts">
 import { onMounted, watch } from 'vue'
 import { RouterView } from 'vue-router'
-import { ChevronRight } from 'lucide-vue-next';
+
 import Header from './components/layout/Header.vue'
 import Footer from './components/layout/Footer.vue'
 import { useDarkMode } from './utils/composables'

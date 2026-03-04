@@ -176,7 +176,7 @@
           :key="p.name"
           class="group relative bg-[var(--surface)] rounded-[32px] overflow-hidden border border-[var(--border)] hover:border-[var(--primary)] transition-all duration-500"
         >
-          <div class=" overflow-hidden relative w-[400px] h-48">
+          <div class="overflow-hidden relative w-[400px] h-48">
             <img
               :src="p.image"
               :alt="p.name"
@@ -294,6 +294,7 @@ import {
   Cloud,
   ArrowRight,
   Router,
+  ChevronRight,
 } from "lucide-vue-next";
 import confetti from "canvas-confetti";
 
@@ -409,8 +410,8 @@ onMounted(() => {
 const topServices = [
   {
     icon: Globe,
-    title: "Web Modernisation",
-    desc: "Transformez vos sites legacy en applications web ultra-performantes avec technologies latest-gen",
+    title: "Modernisation Web",
+    desc: "Ne laissez plus vos anciens systèmes freiner votre croissance. Nous transformons vos infrastructures existantes en solutions web fluides, sécurisées et évolutives.",
   },
   {
     icon: Smartphone,
