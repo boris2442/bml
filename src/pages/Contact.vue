@@ -3,7 +3,7 @@
     class="bg-[var(--background)] selection:bg-[var(--primary)] selection:text-white overflow-x-hidden"
   >
     <section
-      class="relative min-h-[90vh] flex items-center justify-center bg-[var(--background)] overflow-hidden pt-20"
+      class="relative min-h-[90vh] flex items-center justify-center bg-[var(--background)] overflow-hidden pt-1"
     >
       <div class="absolute inset-0 z-0 select-none pointer-events-none">
         <div
@@ -52,7 +52,7 @@
           </div>
 
           <h1
-            class="text-6xl md:text-9xl font-black tracking-tighter leading-[0.85] uppercase italic text-[var(--text-main)]"
+            class="text-3xl md:text-6xl font-black tracking-tighter leading-[0.85] uppercase italic text-[var(--text-main)]"
           >
             L'INGÉNIERIE<br />
             <span
@@ -62,7 +62,7 @@
             >
           </h1>
 
-          <div class="max-w-2xl mx-auto space-y-6">
+          <div class="max-w-2xl mx-auto space-y-2">
             <p
               class="text-lg md:text-xl text-[var(--text-muted)] leading-relaxed font-light"
             >
@@ -75,14 +75,15 @@
             <div
               class="flex flex-col sm:flex-row items-center justify-center gap-6 pt-6"
             >
-              <button
+              <RouterLink
+                to="/about"
                 class="group relative px-10 py-5 bg-[var(--primary)] text-white font-black uppercase text-xs tracking-[0.3em] overflow-hidden transition-all hover:bg-[var(--primary-hover)]"
               >
-                <span class="relative z-10">Démarrer un projet</span>
+                <span class="relative z-10">Notre équipe</span>
                 <div
                   class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"
                 ></div>
-              </button>
+              </RouterLink>
 
               <RouterLink
                 to="/realisations"
@@ -108,15 +109,15 @@
       </div>
     </section>
 
-    <section class="py-24 relative">
+    <section class="py-24 pt-3 relative">
       <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
           <div class="lg:col-span-4 space-y-6">
             <div class="mb-10">
               <h2
-                class="text-xs font-black text-[var(--primary)] uppercase tracking-[0.5em] mb-2"
+                class="text-xs font-black text-[var(--primary)] tracking-[0.5em] mb-2"
               >
-                // DIRECT ACCESS
+                Access direct
               </h2>
               <p
                 class="text-secondary-600 dark:text-secondary-400 text-sm italic"
@@ -202,9 +203,9 @@
           <div
             class="lg:col-span-8 p-1 md:p-12 bg-white dark:bg-white/5 border border-[var(--border)] shadow-2xl relative group"
           >
-            <div
+            <!-- <div
               class="absolute top-1/4 -right-20 md:-right-20 right-0w-64 h-64 bg-[var(--primary)]/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"
-            ></div>
+            ></div> -->
 
             <div class="relative z-10">
               <div class="mb-12">
@@ -220,7 +221,7 @@
 
               <form
                 @submit.prevent="submitForm"
-                class="space-y-8 md:space-y-10 px-4 md:px-0 max-w-3xl mx-auto"
+                class="space-y-5 md:space-y-4 px-4 md:px-0 max-w-3xl mx-auto"
               >
                 <!-- Message de succès -->
                 <div
@@ -251,13 +252,13 @@
                       type="text"
                       placeholder="Aubin Simo"
                       required
-                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-4 text-lg md:text-xl placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300"
+                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-2 md:py-2 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300 text-sm"
                     />
                   </div>
 
                   <div class="group space-y-1">
                     <label
-                      class="block text-sm md:text-base font-semibold text-[var(--primary)]"
+                      class="block text-sm font-semibold text-[var(--primary)]"
                     >
                       Email Professionnel *
                     </label>
@@ -266,7 +267,7 @@
                       type="email"
                       placeholder="contact@projet.com"
                       required
-                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-4 text-lg md:text-xl placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300"
+                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-2 md:py-2 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300 text-sm"
                     />
                   </div>
                 </div>
@@ -275,14 +276,14 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
                   <div class="group space-y-1 relative">
                     <label
-                      class="block text-sm md:text-base font-semibold text-gray-500 group-focus-within:text-[var(--primary)]"
+                      class="block text-sm font-semibold text-gray-500 group-focus-within:text-[var(--primary)]"
                     >
                       Type de Projet
                     </label>
                     <select
                       v-model="form.projectType"
                       required
-                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-4 text-lg md:text-xl appearance-none cursor-pointer focus:border-[var(--primary)] outline-none transition-colors duration-300"
+                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-2 md:py-2 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300 text-sm"
                     >
                       <option value="" disabled>Sélectionnez un type</option>
                       <option value="web">Application Web (SaaS)</option>
@@ -310,20 +311,20 @@
 
                   <div class="group space-y-1 relative">
                     <label
-                      class="block text-sm md:text-base font-semibold text-gray-500 group-focus-within:text-[var(--primary)]"
+                      class="block font-semibold text-gray-500 group-focus-within:text-[var(--primary)] text-sm"
                     >
                       Budget Estimé
                     </label>
                     <select
                       v-model="form.budget"
-                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-4 text-lg md:text-xl appearance-none cursor-pointer focus:border-[var(--primary)] outline-none transition-colors duration-300"
+                      class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-2 md:py-2 placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300 text-sm"
                     >
                       <option value="">Non défini</option>
                       <option value="5k-15k">5k - 15k €</option>
                       <option value="15k-50k">15k - 50k €</option>
                       <option value="50k+">50k+ €</option>
                     </select>
-                    <div
+                    <!-- <div
                       class="absolute right-0 bottom-3 pointer-events-none text-gray-400 dark:text-gray-500"
                     >
                       <svg
@@ -339,23 +340,23 @@
                       >
                         <path d="m6 9 6 6 6-6" />
                       </svg>
-                    </div>
+                    </div> -->
                   </div>
                 </div>
 
                 <!-- Row 3: Message -->
                 <div class="group space-y-1">
                   <label
-                    class="block text-sm md:text-base font-semibold text-gray-500 group-focus-within:text-[var(--primary)]"
+                    class="block text-sm md:text-base font-semibold text-gray-500 group-focus-within:text-[var(--primary)] text-sm"
                   >
                     Détails du projet *
                   </label>
                   <textarea
                     v-model="form.message"
-                    rows="5"
+                    rows="3"
                     required
                     placeholder="Parlez-nous de vos objectifs et de vos contraintes..."
-                    class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-4 text-lg md:text-xl resize-none placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300"
+                    class="w-full bg-transparent border-b border-gray-300 dark:border-gray-600 py-3 md:py-2 resize-none placeholder:text-gray-400 dark:placeholder:text-gray-500 focus:border-[var(--primary)] outline-none transition-colors duration-300 text-sm"
                   ></textarea>
                 </div>
 
@@ -366,11 +367,11 @@
                     v-model="form.agree"
                     type="checkbox"
                     required
-                    class="accent-[var(--primary)] w-5 h-5 cursor-pointer rounded border-gray-400 dark:border-gray-600"
+                    class="accent-[var(--primary)] cursor-pointer rounded border-gray-400 dark:border-gray-600"
                   />
                   <label
                     for="agree"
-                    class="text-sm md:text-base text-gray-500 dark:text-gray-400 leading-relaxed cursor-pointer"
+                    class="text-sm text-gray-500 dark:text-gray-400 leading-relaxed cursor-pointer"
                   >
                     J'accepte que l'ingénierie de
                     <strong>BodyMacs</strong> traite mes données pour me
@@ -381,7 +382,7 @@
                 <!-- Submit Button -->
                 <button
                   type="submit"
-                  class="w-full py-2 bg-[var(--primary)] text-white font-semibold text-lg uppercase tracking-wide rounded-md shadow-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
+                  class="w-full py-2 mt-0 bg-[var(--primary)] text-white font-semibold text-lg uppercase tracking-wide rounded-md shadow-lg transition-all duration-300 transform hover:-translate-y-1 active:scale-95"
                 >
                   Transmettre le Brief
                 </button>

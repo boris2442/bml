@@ -1,6 +1,6 @@
 <template>
   <main class="bg-[var(--background)] text-[var(--text-main)]">
-    <section class="relative py-20 md:py-32">
+    <section class="relative py-4 pt-2  md:pt-2  max-h-[100vh]">
       <div
         class="max-w-7xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center"
       >
@@ -17,7 +17,7 @@
             >
           </div>
           <h1
-            class="text-5xl md:text-7xl font-black leading-tight tracking-tighter"
+            class="text-3xl md:text-6xl font-black leading-tight tracking-tighter pb-0"
           >
             Transformez Votre Vision
             <span class="text-[var(--primary)]">en Réalité Digitale</span>
@@ -29,7 +29,7 @@
           </p>
 
           <div
-            class="grid grid-cols-3 gap-6 pt-8 border-t border-[var(--border)]"
+            class="grid grid-cols-3 gap-6 pt-4 border-t border-[var(--border)] pb-0"
           >
             <div v-for="s in stats" :key="s.label">
               <div class="text-3xl font-black text-[var(--primary)]">
